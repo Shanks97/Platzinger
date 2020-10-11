@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "platzinger"
+    }
+  },
+  "defaultProject": "platzinger",
+  "cli": {
+    "analytics": "77a2b93a-8a6e-4bc4-bd67-de2a260a1ab7"
+  }
 }
