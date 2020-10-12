@@ -1,18 +1,22 @@
 <br />
 <b>Amigos</b>
 <ng-container *ngFor="let user of friends; let i = index">
-    <p *ngIf="user.friend">
-        <li>
-            {{i + 1}} {{user.nick}} - {{user.age}}        
-        </li>
-    </p>
+    <div *ngIf="user.friend">
+        <a routerLink="/conversation/{{user.uid}}">
+            <li>
+                {{i + 1}} {{user.nick}} - {{user.age}}        
+            </li>
+        </a>
+    </div>
 </ng-container>
 
 <b>No Agregados</b>
 <ng-container *ngFor="let user of friends; let i = index">
-    <p *ngIf="!user.friend">
-        <li>
-            {{i + 1}} {{user.nick}} - {{user.age}}        
-        </li>
-    </p>
+    <div *ngIf="!user.friend">
+        <a routerLink="/conversation">
+            <li>
+                {{i + 1}} {{user.nick}} - {{user.age}}        
+            </li>
+        </a>
+    </div>
 </ng-container>
