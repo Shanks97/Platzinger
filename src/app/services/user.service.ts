@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User } from '../Interfaces/user';
+import { Status, User } from '../Interfaces/user';
 
 @Injectable({
   providedIn: 'root'
@@ -15,35 +15,40 @@ export class UserService {
       age: 24,
       email: 'ed@aoe.aoe',
       friend: true,
-      uid: 1
+      uid: 1,
+      status: Status.AWAY
     };
     let usuario2: User = {
       nick: 'Freddy',
       age: 28,
       email: 'fred@aoe.aoe',
       friend: true,
-      uid: 2
+      uid: 2,
+      status: Status.BUSY
     };
     let usuario3: User = {
       nick: 'Yuliana',
       age: 18,
       email: 'yuli@aoe.aoe',
       friend: true,
-      uid: 3
+      uid: 3,
+      status: Status.OFFLINE
     };
     let usuario4: User = {
       nick: 'Ricardo',
       age: 17,
       email: 'rick@aoe.aoe',
       friend: false,
-      uid: 4
+      uid: 4,
+      status: Status.ONLINE
     };
     let usuario5: User = {
       nick: 'Marcos',
       age: 30,
       email:'marcos@aoe.aoe',
       friend: false,
-      uid: 5
+      uid: 5,
+      status: Status.ONLINE
     };
 
     this.friends = [usuario1, usuario2, usuario3, usuario4, usuario5];

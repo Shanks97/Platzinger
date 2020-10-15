@@ -5,6 +5,7 @@
     <div *ngIf="user.friend">
         <a routerLink="/conversation/{{user.uid}}">
             <li>
+                <img class="img-status" src="/assets/img/logo_live_{{user.status}}.png">
                 {{i + 1}} {{user.nick}} - {{user.age}}        
             </li>
         </a>
@@ -16,6 +17,7 @@
     <div *ngIf="!user.friend">
         <a routerLink="/conversation">
             <li>
+                <img class="img-status" src="/assets/img/logo_live_{{user.status}}.png">
                 {{i + 1}} {{user.nick}} - {{user.age}}        
             </li>
         </a>
