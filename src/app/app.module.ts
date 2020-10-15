@@ -11,6 +11,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { SearchPipe } from './pipes/search.pipe';
 import { FormsModule } from '@angular/forms';
+import { GetFriendsOnPipe } from './pipes/get-friends-on.pipe';
+import { GetFriendsOffPipe } from './pipes/get-friends-off.pipe';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -28,7 +30,9 @@ const appRoutes: Routes = [
     ConversationComponent,
     ProfileComponent,
     MenuComponent,
-    SearchPipe
+    SearchPipe,
+    GetFriendsOnPipe,
+    GetFriendsOffPipe
   ],
   imports: [
     BrowserModule,
